@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
 
-    <noscript>weeee woooo, weeee woooo. you need to go to javascript in settings and unblock that puppy or it wont work for you. teeheehee </noscript><!-- checks browser setttings for javascript -->
+    <noscript>weeee woooo, weeee woooo. you need to go to javascript in settings and unblock that puppy. </noscript><!-- checks browser setttings for javascript -->
 
     <meta charset="utf-8">
 
@@ -15,23 +15,12 @@
   </head>
   <body>
 
-     <header><h1>we be learnin'</h1></header>
-     <nav>
-       <p>the listing of my assignments</p>
-       <ol>
-        <li><a href="ChildPages/Landscape or Portrait.html">landscape or portrait</a>
-        <li><a href="ChildPages/Max of Two Numbers.html">max of two numbers</a>
-        <li><a href="ChildPages/Modulus.html">modulus assignments</a>
-        <li><a href="ChildPages/Ordering Grades.html">ordering grades</a>
-        <li><a href="ChildPages/Demerit Points.html">demerit points</a>
-        <li><a href="ChildPages/FizzBuzz.html">fizzbuzz</a>
-        <li><a href="ChildPages/Greeting Someone.html">greeting someone</a>
-      </ol>
-     </nav>
+     <header><h1>assignment name'</h1></header>
+     <nav></nav>
      <aside></aside>
      <section><article></article></section>
 
-   <script src="Small j JavaScript/index.js"></script>
+   <script src="../Small j JavaScript/FuzzBuzz.js"></script>
 
    <footer>
   <blockquote cite="https://tgtbt.blog/2015/02/06/your-smile-is-your-logo/">
