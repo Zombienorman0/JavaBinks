@@ -4,32 +4,26 @@ console.log("you made it to the console! Congrats!")
 console.log('');// prints two spaces in console
 console.log('');// output, which is easier to read
 
-let person1 = {
-firstname : "Zach",
-lastName: "Bylhouwer",
-age: 15,
-favoriteNumber: 7,
-hair: "Dark Brown",
-male: true,
-female: false,
-favoriteGame: "Smite",
-favoriteColor: "Purple",
-favoriteSentenceToHearOrSay: "Say No More Mr. Mercer",
+let zachBylhouwer = {
+  first : "Zach",
+  last : "Bylhouwer",
+  age : 15,
+  hairColor : "Dark Brown",
 }
 
-let person2 = {
-firstname:  "Athena" ,
-lastName: "Chow",
-age: 16,
-favoriteNumber: 69,
-hair: "Brunette",
-male: false,
-female: true,
-favoriteGame: "Overwatch",
-favoriteColor: "Blue",
-favoriteSentenceToHearOrSay: "what can you do?",
-};
+let athenaChow = {
+  first : "Athena",
+  last : "Chow",
+  age : 16,
+  hairColor : "Brunette",
+}
 
+console.log(athenaChow);
+console.log(zachBylhouwer);
 
-console.log(person2);
-console.log(person1);
+let swap = zachBylhouwer.last; // last: Chow
+zachBylhouwer.last = athenaChow.last;
+athenaChow.last = swap;
+
+console.log(athenaChow);
+console.log(zachBylhouwer);
