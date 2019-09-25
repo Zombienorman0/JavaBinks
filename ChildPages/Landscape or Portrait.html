@@ -24,12 +24,14 @@
 
      <section>
        <article>
+
          <form action="x.html" method="post" onsubmit="event.preventDefault();">
 
          <p>&nbsp;</p>
 
 
         <a><strong> enter the values of width & height below...</stong></a>
+
         <p>
           <label for="textfield1">width: </label>
           <input name="textfield1" type="text" id="textfield1">
@@ -42,10 +44,29 @@
           <a id="validityTest2">See the alert</a>
         </p>
 
+        <!-- submit Button -->
+        <br><br>
+        <button type="button" onclick="main()" >submit</button>
+        <br>
+        <h3>the answer is :
+         <a>what is the answer?</a>
+        </h3>
 
-        <!-- width is greater than height, return Landscape.
-         width is less than height, return Portrait.
-         width is equal to height, return square. -->
+        <fieldset>
+          <legend>Case Study</legend>
+          <div>
+            <ul>
+              <li>width is greater than height, return Landscape.
+              <li>width is less than height, return Portrait.
+              <li>width is equal to height, return square.
+            </ul>
+          </div>
+          <label>
+            <input type="checkbox" name="checkboxgroup1">
+          </label>
+          <br>
+        </fieldset>
+
 
        </article>
      </section>
