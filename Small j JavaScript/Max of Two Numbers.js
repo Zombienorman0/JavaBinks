@@ -12,32 +12,10 @@ function testNaN (number) {
   }
 }
 
-function geometry (width, height) { //Notice these parameters are local and do not mix with "number" variable
-  if (width == height) return 'Equal!'; //must be first, return will not allow rest of code to run
-  return (width > height) ? 'True!' : 'False!'; //ternary operator example
+function smallestToLargest (first, second) { //Notice these parameters are local and do not mix with "number" variable
+  if (first == second ) return 'Numbers are the same'; //must be first, return will not allow rest of code to run
+  return (first < second) ? first + ', ' + second: second + ', ' + first; //ternary operator example
   //Seems odd, the inequality, here, is reading the opposite
-}
-
-function checkBoxes() {
-  let checkBox1, checkBox2, checkBox3;
-  checkBox1 = document.getElementById('checkBox1').checked;
-  checkBox2 = document.getElementById('checkBox2').checked;
-  checkBox3 = document.getElementById('checkBox3').checked;
-  if ( checkBox1 == true ) {
-    document.getElementById('checkBox1_answer').innerHTML = "true!";
-  } else {
-    document.getElementById('checkBox1_answer').innerHTML = "Answer?";
-  }
-  if ( checkBox2 == true ) {
-    document.getElementById('checkBox2_answer').innerHTML = "False!";
-  } else {
-    document.getElementById('checkBox2_answer').innerHTML = "Answer?";
-  }
-  if ( checkBox3 == true ) {
-    document.getElementById('checkBox3_answer').innerHTML = "Equal!";
-  } else {
-    document.getElementById('checkBox3_answer').innerHTML = "Answer?";
-  }
 }
 
 // This coding illustrates the advanced method
@@ -60,10 +38,10 @@ function main() {
   document.getElementById('validityTest2').innerHTML = testNaN (secondNumberonie);
 
   if (stopThis == true) {
-    document.getElementById('answer').innerHTML = "Restart the example, a width or height needs to be a number."
+    document.getElementById('answer').innerHTML = "Restart the example."
   } else {
-    console.log("The display geometry is", geometry (firstNumberonie, secondNumberonie) );
-    document.getElementById('answer').innerHTML = "This display is " + geometry (firstNumberonie, secondNumberonie);
+    console.log("smallest number is ",  smallestToLargest(firstNumberonie, secondNumberonie), "is the largest number. ");
+    document.getElementById('answer').innerHTML = "smallest number to largest number ... " + smallestToLargest (firstNumberonie, secondNumberonie);
   }
 
 }
